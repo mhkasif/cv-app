@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="home.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDEmE4WtRdJ8EkSEyRtsy_AqHyr_w0hZOY",
+            authDomain: "dbase-80475.firebaseapp.com",
+            databaseURL: "https://dbase-80475.firebaseio.com",
+            projectId: "dbase-80475",
+            storageBucket: "dbase-80475.appspot.com",
+            messagingSenderId: "719786243344"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- start of firstSession -->
+
+    <nav style="background:rgba(0,0,0,.4);width:100%;height:auto">
+        <h2 style="display:inline-block;letter-spacing:5px;margin-left:10px;color:rgba(255,255,255,.8);margin-bottom:1%">PORTFOLIO</h2>
+
+        <button id="outButton" class="btn btn-primary" style="float:right;margin:1%;background:transparent;border-color:rgba(255,255,255,.8)"><span style="color:rgba(255,255,255,.8);cursor:pointer">SignOut</span><i class="fa fa-user" style="color:rgba(255,255,255,.8);margin-left:5px;cursor:pointer" aria-hidden="true"></i></button>
+        <a href="home.html"><button id="outButton" class="btn btn-primary" style="float:right;margin:1%;background:transparent;border-color:rgba(255,255,255,.8)"><span style="color:rgba(255,255,255,.8);cursor:pointer">EDIT</span><i class="fa fa-pencil" style="color:rgba(255,255,255,.8);margin-left:5px;cursor:pointer" aria-hidden="true"></i></button></a>
+    </nav>
+
+
+    <div class="container">
+        <!-- row1 -->
+        <div class="container">
+            <div class="row" style="margin-left:50px;">
+                <div class="col-lg-5 col-sm-12" style="margin-top:20px;">
+                    <h1 id="name" style="font-size:40px;"></h1>
+                    <h2 id="homeProf"></h2>
+                    <!-- <input type="text" id="homeProf" placeholder="Edit Title/Profession"> -->
+                </div>
+
+                <div class="col-lg-7 col-sm-12" style="margin-top:90px;"></div>
+                <ul style="list-style:none;" id="ulMain">
+                    <li id="homeMain" class="navList" style="margin-left:40px;">HOME</li>
+                    <li id="resumeMain" class="navList">RESUME</li>
+                    <li id="projectMain" class="navList">PROJECTS</li>
+                    <li id="contactMain" class="navList">CONTACTS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- row1 -->
+    <div id="container01">
+        <!--row2  -->
+        <div class="container">
+
+
+            <div class="row" style="margin-left:50px;">
+                <div class="col-lg-5 col-sm-12" style="margin-top:80px;">
+                    <div id="homeImg" style="margin-left:50px;">
+
+                        <!-- <input type="file" style="display:none;" id="picFile"> -->
+                        <!-- <i id="cam" class="fa fa-camera" aria-hidden="true" style="padding-top:28%;font-size:100px; opacity:0.7;color:black;"><p style="font-size:14px;color:black;">ADD PHOTO</p></i> -->
+                        <!-- <i id="dpLoad" class="fa fa-spinner fa-pulse fa-3x fa-fw" style="margin-top:35%;font-size:80px;display:none;"></i> -->
+                        <!-- <span class="sr-only">Loading...</span> -->
+
+                        <!-- <button id="file" style="background:transparent;width:100%;height:100%;border-radius:50%;position:absolute;top:0%;left:0%;"></button> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-sm-12" style="margin-top:40px;">
+                    <h1 style="font-size:60px;">Hello!</h1>
+                    <h2>A Bit About Me</h2>
+                    <div>
+                        <div class="circle">
+                            <p class="circleText">RESUME</p>
+                        </div>
+                        <div class="circle">
+                            <p class="circleText">PROJECTS</p>
+                        </div>
+                        <div class="circle">
+                            <p class="circleText">CONTACT</p>
+                        </div>
+                    </div>
+
+                    <p id="homeInfo" style="margin-top:5%;width:70%;font-size:18px"></p>
+                    <!-- <textarea name="" id="homeInfo" cols="50" rows="8" placeholder="I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag anddrop me anywhere you like on your page. I’m a great place for you towrite more. Tell a story and let your users get to know you."></textarea> -->
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!--row2  -->
+
+        <i id="next" class="fa fa-arrow-circle-right" aria-hidden="true" style="float:right;font-size:50px;margin-right:5%;transform:translate(-50px,-50px);"></i>
+
+    </div>
+    </div>
+
+    <!-- end of first session -->
+
+
+    <!-- start of 2ndSession -->
+
+    <div id="container02">
+        <!-- hehaehahehaeaheheheh -->
+        <!--MAin 2 start -->
+
+        <div class="container">
+            <!--main BOOTSTRAP container -->
+            <div class="container">
+                <!-- row 1 -->
+                <div class="row" style="margin-left:50px;">
+                    <div class="col-lg-12 col-sm-12" style="margin-top:5%;">
+                        <h1>RESUME</h1>
+                        <hr>
+                    </div>
+                </div>
+                <!-- row 1 end -->
+
+                <!-- row 2 start -->
+
+
+                <div class="row" style="margin-left:50px;">
+
+                    <div class="col-lg-2 col-sm-4" style="margin-top:2%;margin-bottom:4%;">
+                        <div class="resumeCircle" style="text-align:center;">
+                            <h2 style="font-size:18px;position:absolute;top:32%;left:17%;color:rgba(255,255,255,.7);">PROFESSION</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-8">
+                        <div class="resumeText">
+                            <h1 id="resumeHeading1"></h1>
+                            <!-- <input id="resumeHeading1" type="text" placeholder="PROFESSION/ EDIT" style="background:transparent;font-size:30px;margin-bottom:2%;"> -->
+                            <!-- <textarea id="resumeText1" rows="5" cols="62" placeholder="​I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself.
+                                " style="font-size:14px;overflow:hidden;margin-top:0px"></textarea> -->
+                            <p id="resumeText1"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <hr>
+                    </div>
+
+                </div>
+
+                <!-- row 2 end -->
+
+                <!-- row 3 start -->
+
+
+                <div class="row" style="margin-left:50px;">
+                    <div class="col-lg-2 col-sm-4" style="margin-top:2%;margin-bottom:4%;">
+                        <div class="resumeCircle">
+                            <h2 style="position:absolute;top:30%;font-size:20px;left:30%;color:rgba(255,255,255,.7)">SKILLS</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-5">
+                        <!-- <input id="resumeHeading2" type="text" placeholder="SKILLS/ EDIT" style="background:transparent;font-size:30px;margin-bottom:2%;"> -->
+                        <h1 id="resumeHeading2"></h1>
+                        <!-- <textarea id="resumeText2" rows="5" cols="62" placeholder="​I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself.
+                        " style="font-size:14px;overflow:hidden;margin-top:0px"></textarea> -->
+                        <p id="resumeText2"></p>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- row 3 end -->
+
+                <!-- row 4 start -->
+
+                <div class="row" style="margin-left:50px;">
+                    <div class="col-lg-2 col-sm-4" style="margin-top:2%;padding-bottom:5%;">
+                        <div class="resumeCircle">
+                            <h2 style="font-size:18px;position:absolute;top:25%;left:20%;color:rgba(255,255,255,.7);">EDUCATION</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-5">
+                        <!-- <input id="resumeHeading3" type="text" placeholder="EDUCATION/ EDIT" style="background:transparent;font-size:30px;margin-bottom:2%;"> -->
+                        <h1 id="resumeHeading3"></h1>
+                        <p id="resumeText3"></p>
+                        <!-- <textarea id="resumeText3" rows="5" cols="62" placeholder="​I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself.
+                        " style="font-size:14px;overflow:hidden;margin-top:0px"></textarea> -->
+                    </div>
+
+                </div>
+
+
+                <!-- row 4 end -->
+
+            </div>
+            <i id="next2" class="fa fa-arrow-circle-right" aria-hidden="true" style="float:right;font-size:50px;margin-right:5%;transform:translateY(-50px)"></i>
+        </div>
+        <!--main BOOTSTRAP container -->
+
+    </div>
+    <!--MAin 2 end -->
+
+
+
+
+
+    <!-- end of 2ndsession -->
+
+
+
+    <!-- start of session3 -->
+
+    <div id="container03">
+        <!-- main -03 -->
+        <div class="container">
+            <!-- Bootstrap main -->
+
+            <div class="container" id="kk">
+
+                <div class="row" style="margin-left:50px;">
+                    <div class="col-lg-7 col-sm-7" style="margin-top:5%;">
+                        <h1>PROJECTS</h1>
+                        <!-- <div id="addPro"><button id="append" class="btn btn-primary add" style="float:right; display:inline;background:transparent;border-color:rgba(0,0,0,.7);border-radius:360px;"><i  style="margin-right:3%;padding:auto;cursor:pointer;" class="fa fa-plus add" aria-hidden="true"><span class="add" style="cursor:pointer;">ADD MORE</span></i></button></div> -->
+                        <!-- <button type="button" id="append" class="btn btn-outline-secondary" style="float:right;">Secondary</button> -->
+                        <!-- <div style="display:inline-block;float:right;cursor:pointer;opacity:.6"><button class="btn btn-primary" id="append" style="float:right;background:transparent;border-color:black;"><i class="fa fa-plus" aria-hidden="true" style="color:black;margin-right:5%;cursor:pointer"></i><span style="cursor:pointer;color:black">ADD PROJECT</span></button></div> -->
+
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- <i id="next3" class="fa fa-arrow-circle-right" aria-hidden="true" style="float:right;font-size:50px;margin-right:5%;transform:translateY(200px)"></i> -->
+            
+            
+            
+            <!-- <i id="next3" class="fa fa-arrow-circle-right" aria-hidden="true" style="float:right;font-size:50px;margin-right:5%;"></i> -->
+            
+        </div>
+        <!-- Bootstrap main -->
+        <i id="next3" class="fa fa-arrow-circle-right" aria-hidden="true" style="float:right;font-size:50px;margin-right:5%;transform:translate(-50px,-50px);padding-bottom:5%;"></i>
+        <!-- <i id="next3" class="fa fa-arrow-circle-right" aria-hidden="true" style="float:right;font-size:50px;margin-right:5%;transform:translateY(-50px)"></i> -->
+
+    </div>
+    <!-- <i id="next3" class="fa fa-arrow-circle-right" aria-hidden="true" ></i> -->
+
+
+    <!-- main -03 -->
+
+
+    <!-- end of session3 -->
+
+
+
+    <!-- start of session4 -->
+
+    <div id="container04">
+        <!--MAin 4 start -->
+
+        <div class="container">
+            <!--main BOOTSTRAP container -->
+            <div class="container">
+
+                <!-- row 1 -->
+                <div class="row" style="margin-left:50px;">
+                    <div class="col-lg-12 col-sm-12" style="margin-top:5%;">
+                        <h1>CONTACT INFORMATION</h1>
+                        <hr>
+                    </div>
+                </div>
+
+
+
+                <div class="row" style="margin-left:50px;margin-top:4%">
+                    <div class="col-lg-5" style="margin-bottom:4%;">
+
+                        <i class="fa fa-envelope " aria-hidden="true" style="font-size:30px;margin-right:3%;"></i>
+                        <!-- <input type="text" id="contactEmail" class="contactInfo" placeholder="example@email.com" /> -->
+                     <h3 id="contactEmail" style="display:inline-block"></h3>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-left:50px;">
+                    <div class="col-lg-5" style="margin-bottom:4%;">
+
+                        <i class="fa fa-facebook-square " aria-hidden="true" style="font-size:30px;margin-right:3%;"></i>
+                        <!-- <input type="text" id="contactFb" class="contactInfo" placeholder="facebook.com/userName" /> -->
+                            <h3 id="contactFb" style="display:inline-block"></h3>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-left:50px;">
+                    <div class="col-lg-5" style="margin-bottom:4%;">
+
+                        <i class="fa fa-mobile " aria-hidden="true" style="font-size:40px;margin-right:4.9%;"></i>
+                        <!-- <input type="text" id="contactCell" class="contactInfo" placeholder="+92 0900 78601" /> -->
+                           <h3 id="contactCell"style="display:inline-block" ></h3>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-left:50px;">
+                    <div class="col-lg-5" style="margin-bottom:2%;">
+
+                        <i class="fa fa-address-book " aria-hidden="true" style="font-size:30px;margin-right:3%;"></i>
+                        <!-- <input type="text" id="contactAddress" class="contactInfo" placeholder="BroadWay Street-04" /> -->
+                          <h3 id="contactAddress" style="display:inline-block"></h3>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-left:50px;">
+                    <div class="col-lg-7" style="margin-bottom:2%;">
+
+                        <!-- <i class="fa fa-address-book " aria-hidden="true" style="font-size:30px;margin-right:3%;"></i> -->
+                        <!-- <input type="text" class="contactInfo"  placeholder="BroadWay Street-04" /> -->
+                        <!-- <div style="float:right">
+                        <button class="btn btn-primary" id="save" ><i class="fa fa-floppy-o" aria-hidden="true" style="margin-right:8%;font-size:22px;cursor:pointer"></i><span style="font-size:21px;cursor:pointer">Save</span></button>
+                        </div> -->
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <!--main BOOTSTRAP container -->
+        </div>
+        <!--MAin 4 end -->
+    </div>
+
+    <!-- end of session4 -->
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="jquery-3.2.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src=render.js></script>
+</body>
+
+</html>
